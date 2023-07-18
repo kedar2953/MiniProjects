@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="wrapper">
+        <div class="card-wrapper">
+             <div class="image">
+                <img src="./Kedar.jpeg" alt="user">
+             </div>
+             <div class="username">
+                <h1>Kedar Ghadage</h1>
+             </div>
+             <div class="designation">
+                <h3>WCE student</h3>
+             </div>
+             <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                <i class="fa-solid fa-share"></i>
+                <div>Share my Profile</div>
+                </button>
+                <button class="btn-follow btn-card">Follow me</button>
+
+             </div>
+        </div>
+    </div>
+    <!-- Modal component -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>  
+        </div>
+        <div>
+            <div class="icon-container">
+                <a href="./capy.jpeg" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="./capy.jpeg" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/_kedar_ghadage48/" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/kedar2953" class="icon" id="github" >
+                    <i class="fa-brands fa-github"></i>
+                    
+                </a>
+                <a href="./capy.jpeg" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay blurry background when we open modal-->
+    <!-- when we click on overlay modal shuold close -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+        
+
+    <script src="app.js"></script>
+</body>
+</html>
